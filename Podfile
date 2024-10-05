@@ -7,14 +7,13 @@ target 'challenge' do
 
   # Pods for challenge
   pod 'TagListView', '~> 1.0'
-
-  target 'challengeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'challengeUITests' do
-    # Pods for testing
+  
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
+    end
   end
 
 end

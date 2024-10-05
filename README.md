@@ -26,6 +26,12 @@ To install the project, follow these steps:
    git clone https://github.com/therealjacobchan/challenge.git
    ```
 
+   Alternatively, if repo file for this project has been provided, you may also perform the following:
+
+   ```bash
+   git clone challenge.bundle
+   ```
+
 2. **Navigate to the project directory**
 
    ```bash
