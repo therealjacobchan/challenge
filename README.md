@@ -1,4 +1,4 @@
-# Stasher
+# Challenge
 
 ## Overview
 
@@ -23,13 +23,13 @@ To install the project, follow these steps:
 1. **Clone the repository to your local machine:**
 
    ```bash
-   git clone https://github.com/therealjacobchan/stasher.git
+   git clone https://github.com/therealjacobchan/challenge.git
    ```
 
 2. **Navigate to the project directory**
 
    ```bash
-   cd stasher
+   cd challenge
    ```
 
 3. **Fetch the Pod libraries**
