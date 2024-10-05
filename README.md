@@ -43,9 +43,15 @@ To install the project, follow these steps:
    pod install
    ```
 
-## Usage
+## Architecture Decisions
 
-The application demonstrates architecture design, pagination with UICollectionView, the use of MVVM, and data fetching. Generics were also highly used throughout the code base, in the attempt for long-term development and expansion of other possible features.
+The application demonstrates several implementations of certain decisions on architecture design, such as pagination with UICollectionView, the use of MVVM, and API fetching using URLSession. Generics were also highly used throughout the code base, in the attempt for long-term development and expansion of other possible features. 
+
+## Challenges Encountered
+
+During the development of the project, one challenge was related to the UX. The app will not necessarily work with smaller screens of the iPhone. One possible solution to overcome this issue is to use a ScrollView. However, it was not exactly iterated where to put the scroll view for each item in the list. One alternative that was developed is to make the fonts a little bit smaller to be able to accommodate smaller devices. Perhaps this is still open for discussion as to where to implement this change.
+
+Another challenge faced during development was the implementation of the network class. Theoretically, the app should work, even using a JSON file. However, it seemed beter to implement a network class, which would be genericized as much as possible to accomodate other possible API calls in the future. This part of the code base can be refactored further by properly refactoring error handling behaviors. This will require an alert to be able to smoothly execute the change.
 
 ## Points for improvement
 
