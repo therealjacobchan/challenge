@@ -48,6 +48,7 @@ The code base is not yet as robust as it should've been. Some proposed improveme
 - Diversification among different flavors (Debug, Staging, Release)
 - Implementing generics for the UICollectionViewCell to be able to extend to other types of questions
 - Implementing drag and drop feature for answering the recap type question
+- Implementing scrolling feature in each text for easier readability (UI must be readily available to help user know that the text is scrollable)
 
 ## Contact
 
